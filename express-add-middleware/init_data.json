@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "email": "cece@wyncode.co",
+      "firstName": "Cece",
+      "lastName": "Claridge",
+      "state": "active"
+    },
+    {
+      "id": 2,
+      "email": "leo@wyncode.co",
+      "firstName": "Leo",
+      "lastName": "Policastro",
+      "state": "active"
+    },
+    {
+      "id": 3,
+      "email": "william@wyncode.co",
+      "firstName": "William",
+      "lastName": "Kennedy",
+      "state": "pending"
+    },
+    {
+      "id": 4,
+      "email": "katie@wyncode.co",
+      "firstName": "Katie",
+      "lastName": "Brueil",
+      "state": "pending"
+    },
+    {
+      "id": 5,
+      "email": "ernie@wyncode.co",
+      "firstName": "Ernie",
+      "lastName": "Hsiung",
+      "state": "pending"
+    }
+  ]
+}
