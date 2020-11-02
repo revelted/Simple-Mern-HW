@@ -23,30 +23,33 @@ const users = require("./init_data.json").data;
  */
 let id = users.length + 1;
 
+// FIXME: Complete the callback function so we get
+// all of the users in JSON when we make a GET call
+// to /api/users.
 app.get("/api/users", (req, res) => {
-  res.json(users);
+  // ...?
 });
 
 app.get("/api/users/:id", (req, res) => {
+  // Extra credit: What's this line all about?
   const user = users.find((v) => v.id === Number(req.params.id));
   res.status(200).json(user);
 });
 
 app.post("/api/users", (req, res) => {
-  // oh wow, what is this black magic? Let's
-  // break it down piece by piece...
+  // Extra credit: What does this line do?
   const user = Object.assign({}, req.body, { id });
   id++;
   users.push(user);
-  // res.json(user);
-  // actually, let's have it properly assign
-  // the HTTP code for newly added.
   res.status(201).json(user);
 });
 
 app.delete("/api/users/:id", (req, res) => {
+  // Extra credit: Or this one?
   const userIndex = users.findIndex((v) => v.id === Number(req.params.id));
   const deletedUser = users[userIndex];
+
+  // Extra credit: ...what?
   users.splice(userIndex, 1);
   res.status(204).json(deletedUser);
 });
