@@ -3,7 +3,7 @@
 1. `cd` into this directory
 2. `yarn`
 3. `cp .env.sample .env`
-4. Fill in the `ATLAS_URI` value inside `.env` with the MongoDB Atlas connection you used for the wynoverflow-c39 exercise.
+4. Fill in the `ATLAS_URI` value inside `.env` with the MongoDB Atlas connection you used for the wynoverflow exercises you're doing this week.
 5. We've created a REPL style console you can use by typing `node console.js`.
 6. If you need to find a previous command you typed in from the repl, try up arrow or control up arrow, depending on your system.
 
@@ -35,5 +35,5 @@ IMPORTANT NOTE: JUST FOR THIS CONSOLE DEMO, the Question model is nested inside 
 - What's the differences you see when we typed in `new` versus using the `.save()` method on the model?
 - What were the different ways we could construct a document?
 - What do you think `validateSync()` does? (Google it if you're still not 100% sure)
-- What do you think we had to type those long parts including `.then` and `.catch` just to check on and write our database records? (HINT: try creating a new document and just use `.save()` without the `.then()`. What's different?)
+- Why do you think we had to type those long parts including `.then` and `.catch` just to check on and write our database records? (HINT: try creating a new document and just use `.save()` without the `.then()`. What's different?)
 - What questions do you have for us?
